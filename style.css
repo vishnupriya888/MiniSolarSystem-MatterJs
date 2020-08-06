@@ -1,0 +1,58 @@
+@keyframes bounce{
+  /* start */
+  0% {
+    background-color: rgb(0, 255, 234);
+    border-width: 16px;
+  }
+
+  50% {
+   background-color: rgb(0, 166, 255);
+   border-width: 18px;
+  }
+  /* end */
+  100% {
+    background-color: rgb(0, 34, 255);
+    border-width: 20px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+canvas{
+  text-align: center;
+}
+
+h1 {
+  vertical-align: text-top;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 75px;
+
+  border-style: double;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50px;
+
+  animation-name: bounce;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+
+  /* Sets background color */
+  background-color: rgb(0, 0, 0);
+}
+
+
